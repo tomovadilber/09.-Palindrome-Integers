@@ -1,0 +1,38 @@
+using System;
+using System.Linq;
+using System.Numerics;
+
+namespace Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string num = Console.ReadLine();
+            
+
+            while (num!="END")
+            {
+                string newS = string.Empty;
+
+                for (int i = num.Length-1; i >=0; i--)
+                {
+                    newS += num[i];
+                }
+                if (num == newS)
+                {
+                    Console.WriteLine("true");
+                }
+                else
+                {
+                    Console.WriteLine("false");
+                }
+                
+                num = Console.ReadLine();
+            }
+
+            
+        }
+    }
+}
